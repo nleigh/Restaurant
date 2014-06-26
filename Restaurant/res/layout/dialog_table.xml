@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RadioGroup
+        android:id="@+id/rgTableOptions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <RadioButton
+            android:id="@+id/rbTakeOrders"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Take Orders" />
+
+        <RadioButton
+            android:id="@+id/rbViewCurrentOrder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="View the Current Order" />
+
+        
+        <RadioButton
+            android:id="@+id/rbViewOrderHistory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="View Table Order History" />
+        <RadioButton
+            android:id="@+id/rbCompleteOrder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Complete Order" />
+
+        
+    </RadioGroup>
+
+</LinearLayout>

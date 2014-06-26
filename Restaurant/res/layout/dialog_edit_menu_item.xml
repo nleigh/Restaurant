@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RadioGroup
+        android:id="@+id/rgEditMenuItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <RadioButton
+            android:id="@+id/rbUpdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Update Menu Item" />
+
+        <RadioButton
+            android:id="@+id/rbDuplicate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Duplicate Menu Item" />
+
+        
+        <RadioButton
+            android:id="@+id/rbView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="View Menu Item" />
+        <RadioButton
+            android:id="@+id/rbDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delete Menu Item" />
+
+        
+    </RadioGroup>
+
+</LinearLayout>

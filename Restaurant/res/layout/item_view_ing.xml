@@ -1,0 +1,45 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="?android:listPreferredItemHeightSmall"
+    android:dividerPadding="8dp"
+    android:gravity="left|center"
+    android:orientation="horizontal" >
+
+    <!-- Dummy text view that will display the name of a random country. -->
+
+    <TextView
+        android:id="@+id/ingName"
+        style="?android:textAppearanceMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="2dp"
+        android:gravity="bottom"
+        android:paddingLeft="?android:listPreferredItemPaddingLeft" />
+
+    <!-- A button that, when pressed, will delete this list item row from its container. -->
+
+    <TextView
+        android:id="@+id/tvIngUnit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ing Unit"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/tvIngType"
+        android:layout_width="198dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_weight="0.44"
+        android:text="Ing Type"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <ImageButton
+        android:id="@+id/delete_button"
+        android:layout_width="48dp"
+        android:layout_height="match_parent"
+        android:background="?android:selectableItemBackground"
+        android:contentDescription="@string/action_remove_item"
+        android:src="@drawable/ic_list_remove" />
+
+</LinearLayout>

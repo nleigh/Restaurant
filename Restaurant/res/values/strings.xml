@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Restaurant</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello World!</string>
+
+    <!-- activity_main - button names -->
+    <string name="waiter">Waiter</string>
+    <string name="kitchen">Kitchen</string>
+    <string name="manager">Manager</string>
+    <string name="customer">Customer</string>
+    <string name="main_instruction">Click what restaurant user you are</string>
+    <string name="menu">menu</string>
+    <string name="currentOrder">Current Order</string>
+
+    <!-- - title names -->
+    <string name="title_activity_customer">CustomerActivity</string>
+    <string name="title_activity_waiter">WaiterActivity</string>
+    <string name="title_activity_kitchen">KitchenActivity</string>
+    <string name="title_activity_menu">MenuActivity</string>
+    <string name="title_activity_ingredients">IngredientsActivity</string>
+    <string name="title_activity_statistics">StatisticsActivity</string>
+    <string name="title_activity_edit_menu">EditMenuActivity</string>
+    <string name="title_activity_manage_database">ManageDatabaseActivity</string>
+    <string name="title_activity_stock_levels">StockLevelsActivity</string>
+
+    <!-- dialog menu choices - text string names -->
+    <string name="npOptionSize">Size</string>
+    <string name="npOptionCrust">Crust</string>
+    <string name="npOptionQty">Qty</string>
+    <string name="npPrice">Price</string>
+
+    <!-- Menu list view, hasa  button to view current order -->
+    <string name="viewCurrentOrder">View Current Order</string>
+
+    <!-- Menu item view, content desctiption for image -->
+    <string name="imageOfMenuItem">Image Of the Menu Item</string>
+    <string name="title_activity_current_order">CurrentOrderActivity</string>
+
+    <!-- CurrentOrder list view -->
+    <string name="enterOrderCommentsHere">Enter Order Comments Here</string>
+    <string name="totalCost">Total Cost</string>
+    <string name="order">Order</string>
+
+    <!-- ManagerActivity -->
+    <string name="stockLevels">Stock Levels</string>
+    <string name="editMenu">Edit Menu</string>
+    <string name="manageDatabase">Manage Database</string>
+    <string name="ingredients">Ingredients</string>
+    <string name="statistics">Statistics</string>
+    <string name="settings">Settings</string>
+    <string name="orderHistory">OrderHistory</string>
+
+    <!-- Ing list -->
+    <string name="amountHint">amount</string>
+    <string name="action_remove_item">Remove Item</string>
+
+    <!-- editmenu name disc ing -->
+    <string name="nameHint">Insert the name for the Menu Item</string>
+    <string name="EditItemDescription">Edit Item Description</string>
+    <string name="addAIngredient">Add a Ingredient</string>
+
+    <!-- add ing -->
+    <string name="addNewIng">Add New Ingredient</string>
+
+    <!-- edit menu wizard buttons -->
+    <string name="back">Back</string>
+    <string name="next">Next</string>
+    <string name="cancel">Cancel</string>
+    <string name="finish">Finish</string>
+
+    <!-- IngUnitsDialog -->
+    <string name="units">Units</string>
+
+    <!-- units array -->
+    <string-array name="units_array">
+        <item>g</item>
+        <item>ml</item>
+        <item>qty</item>
+    </string-array>
+
+    <!-- ContentDesription for Images -->
+    <string name="deleteImage">image of a delete button</string>
+    <string name="title_activity_manager">ManagerActivity</string>
+    <string name="title_activity_tables">TablesActivity</string>
+    <string name="title_activity_order_completion">OrderCompletionActivity</string>
+    <string name="title_activity_manager_settings">ManagerSettingsActivity</string>
+
+</resources>

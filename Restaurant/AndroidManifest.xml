@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="uk.co.nathanleigh.restaurantsystem"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="18" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <instrumentation
+        android:name="android.test.InstrumentationTestRunner"
+        android:label="your tests label"
+        android:targetPackage="uk.co.nathanleigh.restaurant" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/chefhat"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <uses-library android:name="android.test.runner" />
+
+        <activity
+            android:name="uk.co.nathanleigh.restaurant.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="uk.co.nathanleigh.restaurant.waiter.WaiterActivity"
+            android:label="@string/title_activity_waiter"
+            android:parentActivityName="MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="MainActivity" />
+        </activity>
+        <activity
+            android:name="uk.co.nathanleigh.restaurant.kitchen.KitchenActivity"
+            android:label="@string/title_activity_kitchen"
+            android:parentActivityName="MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="MainActivity" />
+        </activity>
+        <activity
+            android:name="uk.co.nathanleigh.restaurant.menu.MenuActivity"
+            android:label="@string/title_activity_menu"
+            android:parentActivityName="MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="MainActivity" />
+        </activity>
+        <activity
+            android:name="uk.co.nathanleigh.restaurant.waiter.CurrentOrderActivity"
+            android:label="@string/title_activity_current_order"
+            android:parentActivityName="MenuActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="MenuActivity" />
+        </activity>
+        <activity
+            android:name="uk.co.nathanleigh.restaurant.manager.ManagerActivity"
+            android:label="@string/title_activity_manager"
+            android:parentActivityName="MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="MainActivity" />
+        </activity>
+        <activity
+            android:name="uk.co.nathanleigh.restaurant.manager.IngredientsActivity"
+            android:label="@string/title_activity_ingredients"
+            android:parentActivityName="uk.co.nathanleigh.restaurant.manager.ManagerActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="uk.co.nathanleigh.restaurant.manager.ManagerActivity" />
+        </activity>
+        <activity
+            android:name="uk.co.nathanleigh.restaurant.manager.StatisticsActivity"
+            android:label="@string/title_activity_statistics"
+            android:parentActivityName="uk.co.nathanleigh.restaurant.manager.ManagerActivity"
+            android:windowSoftInputMode="adjustPan" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="uk.co.nathanleigh.restaurant.manager.ManagerActivity" />
+        </activity>
+        <activity
+            android:name="uk.co.nathanleigh.restaurant.manager.editMenu.EditMenuActivity"
+            android:label="@string/title_activity_edit_menu"
+            android:parentActivityName="uk.co.nathanleigh.restaurant.manager.ManagerActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="uk.co.nathanleigh.restaurant.manager.ManagerActivity" />
+        </activity>
+        <activity
+            android:name="uk.co.nathanleigh.restaurant.manager.ManageDatabaseActivity"
+            android:label="@string/title_activity_manage_database"
+            android:parentActivityName="uk.co.nathanleigh.restaurant.manager.ManagerActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="uk.co.nathanleigh.restaurant.manager.ManagerActivity" />
+        </activity>
+        <activity
+            android:name="uk.co.nathanleigh.restaurant.manager.StockLevelsActivity"
+            android:label="@string/title_activity_stock_levels"
+            android:parentActivityName="uk.co.nathanleigh.restaurant.manager.ManagerActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="uk.co.nathanleigh.restaurant.manager.ManagerActivity" />
+        </activity>
+        <activity
+            android:name="uk.co.nathanleigh.restaurant.waiter.TablesActivity"
+            android:label="@string/title_activity_tables"
+            android:parentActivityName="uk.co.nathanleigh.restaurant.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="uk.co.nathanleigh.restaurant.MainActivity" />
+        </activity>
+        <activity
+            android:name="uk.co.nathanleigh.restaurant.waiter.OrderCompletionActivity"
+            android:label="@string/title_activity_order_completion"
+            android:parentActivityName="uk.co.nathanleigh.restaurant.waiter.TablesActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="uk.co.nathanleigh.restaurant.waiter.TablesActivity" />
+        </activity>
+        <activity
+            android:name="uk.co.nathanleigh.restaurant.manager.ManagerSettingsActivity"
+            android:label="@string/title_activity_manager_settings"
+            android:parentActivityName="uk.co.nathanleigh.restaurant.manager.ManagerActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="uk.co.nathanleigh.restaurant.manager.ManagerActivity" />
+        </activity>
+        <activity
+            android:name="uk.co.nathanleigh.restaurant.CustomerActivity"
+            android:label="@string/title_activity_customer"
+            android:parentActivityName="uk.co.nathanleigh.restaurant.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="uk.co.nathanleigh.restaurant.MainActivity" />
+        </activity>
+    </application>
+
+</manifest>

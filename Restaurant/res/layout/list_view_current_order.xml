@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    
+       
+
+        <ListView
+            android:id="@+id/lvTempOrder"
+            android:layout_width="match_parent"
+            android:layout_height="331dp" >
+        </ListView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <EditText
+                android:id="@+id/etOrderComments"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:hint="@string/enterOrderCommentsHere" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayoutTO2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4.79" >
+
+            <Button
+                android:id="@+id/bBackToMenu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/menu" />
+
+            <TextView
+                android:id="@+id/tvTotalCost"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+               
+                android:gravity="center"
+                android:text="@string/totalCost"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <Button 
+                android:id="@+id/bOrder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onClick_orderButton"
+                android:text="@string/order" />
+
+        </LinearLayout>
+
+    </LinearLayout>
