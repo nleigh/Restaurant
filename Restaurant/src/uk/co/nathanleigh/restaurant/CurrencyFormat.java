@@ -130,7 +130,43 @@ public class CurrencyFormat {
 	
 }
 /*
-Used in my program 
+Used in my program to display currency format
+etOptionPrice = (EditText) rootView.findViewById(R.id.etOptionPrice);
+
+int maxLength = 13; // prevent entering a number too large 
+etOptionPrice.setFilters(new InputFilter[] {  
+ 			new InputFilter.LengthFilter(maxLength)}); 
+etOptionPrice.addTextChangedListener(CurrencyFormat. 
+ 				getCurrencyInputTextWatcher(etOptionPrice)); 
+
+ 
+ // get value from db and display				
+int optionPrice = cursor.getInt(cursor.getColumnIndex(DatabaseAdapter.KEY_OPTIONPRICE)); 
+	addOption( rowId, optionName, optionPrice); 
+	
+	private static void addOption(long reqRowId, String optionName, int optionPrice) { 
+ 		 
+ 		final long rowId = reqRowId; 
+ 		final ViewGroup newView = (ViewGroup) context.getLayoutInflater() 
+ 				.inflate(R.layout.item_view_option, mContainerView, false); 
+ 		 
+		((TextView) newView.findViewById(R.id.tvOptionName)).setText(optionName + "  " 
+				+ CurrencyFormat.currencyDoubleToString( 
+						CurrencyFormat.currencyIntToDouble(optionPrice))); 
+		 
+
+
+
+// insert into db
+String optionPriceStr =  etOptionPrice.getText().toString(); 
+ 			 
+ 			if(checkIfInputValid(optionName, optionPriceStr)){ 
+ 			 	 
+ 			
+ 			int optionPriceInt =  CurrencyFormat. 
+					currencyStringIntoInteger(optionPriceStr); 
+			 
+			final long rowId = db.insertRowTempMenuItemOption(optionName, optionPriceInt); 
 
 */
 
