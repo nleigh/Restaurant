@@ -24,6 +24,9 @@ public class CurrencyFormat {
 
 	
 	//Returns a textwatcher which automatically formats input into currency
+	// eg user enters 1 = £0.01 
+	// user enters 1 again = £0.11
+	// 1 again = £1.11
 	public static TextWatcher getCurrencyInputTextWatcher(final EditText etNumOfTables) {
 		TextWatcher textWatcher = new TextWatcher() {
 			private String current = "";
@@ -66,6 +69,7 @@ public class CurrencyFormat {
 	}
 	
 	// returns currency represented in a string format into an int
+	// used for storing value in db
 	public static int currencyStringIntoInteger(String currencyString) {
 
 		currencyString = currencyString.replaceAll("\\.", "");
@@ -117,30 +121,16 @@ public class CurrencyFormat {
 		return currencyDouble;
 	}
 	
+	// Used for getting int value from db and return string value in currency format e.g. 1230 = £12.30
 	public static String currencyIntToString(int currencyInt){
 		double currencyDouble = currencyIntToDouble(currencyInt);
 		String currencyString = currencyDoubleToString( currencyDouble);
 		return currencyString;
 	}
-
-
-	//public static void setEditTextBlank(EditText et) {
-		
-	//	et.removeTextChangedListener(getCurrencyInputTextWatcher(et));
-	//	et.setText("");
-	//	et.addTextChangedListener(getCurrencyInputTextWatcher(et));
-	//}
 	
 }
-//int maxLength = 13; // prevent entering a number too large
-	// etNumOfTables.setFilters(new InputFilter[] { 
-	//		new InputFilter.LengthFilter(maxLength)});
-	// TextWatcher currencyInputTextWatcher = getCurrencyInputTextWatcher();
-	// etNumOfTables.addTextChangedListener(currencyInputTextWatcher);
-	//
-	// String currencyString = [EditTextBameHere].getText().toString();
-	// int currencyInt = currencyStringIntoInteger(currencyString);
-	// double currencyDouble = currencyIntToDouble(currencyInt);
-	// String currencyDoubleToString = NumberFormat.getCurrencyInstance()
-	//	 .format(currencyDouble);
-	
+/*
+Used in my program 
+
+*/
+
